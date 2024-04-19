@@ -838,7 +838,7 @@ namespace Seq
             if (idx >= size/2) {
                 size--;
                 T garbage = {};
-                helper<T, Layer>::pop_push(garbage, root, size, size - idx, false, info);
+                helper<T, Layer>::pop_push(garbage, root, size, size - idx + 1, false, info);
             } else {
                 T garbage = {};
                 helper<T, Layer>::pop_push(garbage, root, 0, idx + 1, true, info);
